@@ -39,30 +39,35 @@
 ### 🔹 Deep Neural Network (DNN)
 - Dữ liệu đầu vào: Các chỉ số môi trường (PM2.5, PM10, NO2, CO, SO2, TEMP, HUM)
 - Mục tiêu: Phân loại mức độ ô nhiễm (Tốt, Trung bình, Cao, Nguy hiểm)
+  ![DNN_flow](https://github.com/Cuong312004/AirQuality/blob/main/images/huanluyendnn.png)
 - Kết quả: Accuracy đạt **97.66%**
 - Đánh giá: MAE, RMSE, R² trên tập kiểm định
-
+  ![DNN_result_1](https://github.com/Cuong312004/AirQuality/blob/main/images/matranhonloandnn.png)
 ### 🔹 Long Short-Term Memory (LSTM)
 - Mục tiêu: Dự đoán **nhiệt độ liên tục 7 ngày tới**
 - Kiến trúc: LSTM layers + Dropout + BatchNorm + Dense
+  ![LSTM_flow](https://github.com/Cuong312004/AirQuality/blob/main/images/huanluyenlstm.png)
 - Loss Function: MSE – Optimizer: Adam
 - Hiệu suất: 207s/predict với mức RAM < 22% và CPU < 3%
-
+  ![LSTM_result_1](https://github.com/Cuong312004/AirQuality/blob/main/images/EvaluationMetrics.png)
+  ![LSTM_result_2](https://github.com/Cuong312004/AirQuality/blob/main/images/uitiot_predict.png)
 ---
 
+## 📌 Kiến trúc Cloud
+![Cloud_result](https://github.com/Cuong312004/AirQuality/blob/main/images/trienkhaicloud%20(1).png)
 ## 📱 Ứng dụng Android
 
 - Ngôn ngữ: Kotlin  
 - UI: Jetpack Compose  
 - API: Retrofit  
 - Dữ liệu cập nhật mỗi 5 phút
-
+![MOBILE_result_1](https://github.com/Cuong312004/AirQuality/blob/main/images/homescreen1.png)
 ### 🔸 Chức năng chính:
 - **Trang chính (Home)**: Hiển thị AQI hiện tại + biểu đồ cảm biến  
 - **Cảnh báo (Alerts)**: Gửi thông báo thời gian thực khi vượt ngưỡng  
 - **Lịch dự báo (Forecast)**: Biểu đồ nhiệt độ theo giờ/ngày (LSTM)  
 - **Dropdown chọn khu vực**: Lấy dữ liệu dựa trên vị trí từ API `/locations`
-
+![MOBILE_result_2](https://github.com/Cuong312004/AirQuality/blob/main/images/predicthourScreen.png)
 ---
 
 ## 🌐 API Endpoint (FastAPI)
