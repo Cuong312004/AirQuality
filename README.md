@@ -15,14 +15,7 @@
 
 ## 🧱 Kiến trúc hệ thống
 
-```mermaid
-graph TD
-  A[Cảm biến IoT (ESP8266)] --> B(MQTT Broker - Mosquitto)
-  B --> C[Server xử lý (FastAPI)]
-  C --> D[(PostgreSQL Database)]
-  C --> E[Mô hình AI (DNN, LSTM)]
-  E --> F[Android App (Jetpack Compose)]
-```
+![System Architecture](images/mo-hinh-tong-the (1).png)
 
 ---
 
