@@ -15,7 +15,7 @@
 
 ## 🧱 Kiến trúc hệ thống
 
-![System Architecture](images/mo-hinh-tong-the (1).png)
+![System Architecture](https://github.com/Cuong312004/AirQuality/blob/main/images/mo-hinh-tong-the%20(1).png)
 
 ---
 
